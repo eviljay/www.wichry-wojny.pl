@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Profil gracza Bruner w grze Wichry Wojny</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
+    <meta name="language" content="pl" />
+    <link href="styl.css" rel="stylesheet" type="text/css"/>
+    <link rel="Shortcut icon" href="img/logo_male.gif" />
+</head>
+<body onload="KoniecLadowania()">
+
+<script type="text/javascript">
+ function KoniecLadowania() {
+ document.getElementById('deska').style.opacity="1";
+ document.getElementById('preloader').style.display="none";
+ }
+</script>
+<!-- początek strony głównej -->
+<!-- tło - stół, sęki, mapy, luger, zakładki -->
+
+<div id="deska">
+<script type="text/javascript">
+document.getElementById('deska').style.opacity="0";
+document.getElementById('preloader').style.display="block";
+</script>
+  <div id="deska_mapaGorna"></div>
+  <div id="deska_luger"></div>
+  <div id="deska_mapaDolna"></div>
+     <div id="zakladka_StronaGlowna"><a class="zakladki" href="index.php"></a></div>
+     <div id="zakladka_Forum"><a class="zakladki" href="http://www.forum.wichry-wojny.pl"></a></div>
+     <div id="zakladka_Screeny"><a class="zakladki" href="screeny.php"></a></div>
+     <div id="zakladka_Faq"><a class="zakladki" href="poradnik.php"></a></div>
+<div id="notes">
+ <div id="notes_logo"></div>
+
+   <div id="notes_srodek"> 
+      <div id="notes_tekst">       <!-- główna część strony - tekst w notesie -->
+    
+<!-- div profil - poczatek -->
+	<div style="width: 578px; height: 415px; position: relative; left: 35px; top: 15px; background: url(img/profil/profil.jpg) no-repeat;">
+         <img src="img/profil/niem.jpg" style="position: absolute; top: 145px; left: 312px;" alt=""/>       
+          <div style="font: 10px verdana, trebuchet; padding: 3px 0px 0px 1px; line-height: 26px; color: #191919; position: absolute; width: 108px; height: 192px; left: 168px; top: 108px; overflow: hidden;">
+             <b>Bruner</b><br/>
+             Niemcy &nbsp;&nbsp; 759<br/>
+             Oberleutnant<br/>
+             ---- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---- <br/>
+             ----<br/>
+             2009-12-02             <div style="font: 9px verdana, trebuchet; color: #9a8675; position: absolute; top: 15px; left: 2px; line-height: 26px;">
+             login<br/>nacja&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;punkty<br/>stopień wojskowy<br/>
+             wiek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nr gg<br/>
+             zameldowany<br/>wcielony do wojska
+             </div>
+         </div> <!-- dane gracza -->
+		     <div style="font: 10px verdana, trebuchet; text-align: center; position: absolute; color: #191919; left: 102px; top: 299px; width: 176px; height: 12px; overflow: hidden;">
+             ----             </div>
+             <div style="font: 9px verdana, trebuchet; position: absolute; color: #9a8675; left: 130px; top: 312px;">
+             adres korespondencyjny
+             </div> <!-- e-mail -->
+             <div style="font: 10px verdana, trebuchet; position: absolute; line-height: 17px; color: #191919; left: 15px; top: 324px; width: 253px; height: 52px; overflow: hidden;">
+                          </div> <!-- adnotacje - opis -->
+             <div style="width: 150px; height: 200px; position: absolute; top: 96px; left: 13px; background: url(showimage.php?user=Bruner) no-repeat center;"></div>         <div style="z-index: 3; font: 10px verdana, trebuchet; color: #191919; position: absolute; left: 301px; top: 51px; height: 332px; width: 234px; overflow: hidden;"> 
+             <b>- Jesteś niezalogowany. Aby zobaczyć wszystkie informacje, musisz się zalogować. Jeśli nie masz jeszcze
+                     konta, <a href="rejestracja.php" style="color: #711414;">zarejestruj</a> się i dołącz do społeczności graczy !</b>
+         </div> <!-- osiagniecia div -->  
+         </div> <!-- div profil -->
+<br/><br/><br/><br/>   
+
+<br/>
+
+         
+      </div>              <!-- zamykanie diva o id="notes_tekst" -->
+
+<br/><div class="banner"><small>Reklama</small><br/>
+<script TYPE="text/javascript" src="http://www.cpmprofit.com/ads.php?r=83090206f622bfa0dce5d851da34133330242aae5063933&popup=0"></script>
+</div>
+         
+            
+</div>      <!-- zamykanie diva o id="notes_srodek" -->
+<div id="notes_stopka"> <div style="padding-right: 100px; padding-top: 21px;">Copyright &copy;2009 Wichry Wojny</div> </div>  
+</div>   <!-- zamykanie diva o id="notes" -->
+</div>   <!-- zamykanie diva o id="deska" -->
+<?php
+mysql_close();
+?>
+</body>
+</html>
+	  

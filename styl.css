@@ -1,0 +1,402 @@
+﻿* {margin:0; padding:0}
+
+body{
+background: black;
+}
+
+/* tło - cały stół */
+#deska{
+position: relative;
+min-width: 1250px;
+width: 100%;
+height: 100%;
+overflow: hidden;
+z-index: 0;
+top: 0px;
+right: 0px;
+background: url("./zasoby/grafika/img/decha.jpeg") repeat;
+}
+#system{
+position:absolute;
+width:456px;
+height:5px;
+z-index:2;
+top:0px;
+left:620px;
+}
+#deska_mapaDolna{
+position: absolute;
+width: 1129px;
+height: 299px;
+background: url("./zasoby/grafika/img/mapa_dolna.png") no-repeat;
+bottom: 0px;
+right: 0px;
+}
+
+#deska_mapaGorna{
+position: absolute;
+width: 695px;
+height: 567px;
+background: url("./zasoby/grafika/img/mapa_gorna.jpeg") no-repeat;
+top: 0px;
+left: 0px;
+}
+
+#deska_luger{
+position: absolute;
+width: 517px;
+height: 155px;
+z-index: 2;
+background: url("./zasoby/grafika/img/luger.png") no-repeat;
+top: 0px;
+right: 0px;
+}
+
+
+/* Wszystkie zakładki- StronaGłówna, Dowodzenie, Forum, Screeny, Faq */
+
+#zakladka_StronaGlowna{
+position: absolute;
+width: 187px;
+height: 33px;
+z-index: 3;
+top: 112px;
+left: 600px;
+background: url(./zasoby/grafika/img/zakladka_main.png) no-repeat;
+} #zakladka_StronaGlowna:hover{top: 104px; height: 41px;}
+
+#zakladka_Dowodzenie{
+position: absolute;
+width: 151px;
+height: 34px;
+z-index: 3;
+top: 111px;
+left: 635px;
+background: url(./zasoby/grafika/img/zakladka_dowodzenie.png) no-repeat;
+} #zakladka_Dowodzenie:hover{top: 104px; height: 41px;}
+
+#zakladka_Profil{
+position: absolute;
+width: 94px;
+height: 32px;
+z-index: 3;
+top: 113px;
+left: 785px;
+background: url(./zasoby/grafika/img/zakladka_profil.png) no-repeat;
+} #zakladka_Profil:hover{top: 104px; height: 41px;}
+
+#zakladka_Forum{
+position: absolute;
+width: 100px;
+height: 32px;
+z-index: 3;
+top: 113px;
+left: 895px;
+background: url(./zasoby/grafika/img/zakladka_forum.png) no-repeat;
+} #zakladka_Forum:hover{top: 105px; height: 40px;}
+
+#zakladka_Forum2{
+position: absolute;
+width: 100px;
+height: 32px;
+z-index: 3;
+top: 113px;
+left: 880px;
+background: url(./zasoby/grafika/img/zakladka_forum.png) no-repeat;
+} #zakladka_Forum2:hover{top: 105px; height: 40px;}
+
+#zakladka_Screeny{
+position: absolute;
+width: 113px;
+height: 33px;
+z-index: 3;
+top: 112px;
+left: 785px;
+background: url(./zasoby/grafika/img/zakladka_screeny.png) no-repeat;
+} #zakladka_Screeny:hover{top: 104px; height: 41px;}
+
+#zakladka_Faq{
+position: absolute;
+width: 82px;
+height: 31px;
+z-index: 3;
+top: 114px;
+left: 995px;
+background: url(./zasoby/grafika/img/zakladka_faq.png) no-repeat;
+} #zakladka_Faq:hover{top: 107px; height: 38px;}
+
+#zakladka_Faq2{
+position: absolute;
+width: 82px;
+height: 31px;
+z-index: 3;
+top: 114px;
+left: 980px;
+background: url(./zasoby/grafika/img/zakladka_faq.png) no-repeat;
+} #zakladka_Faq2:hover{top: 107px; height: 38px;}
+
+a.zakladki{display: block; width: 100%; height: 100%;}
+
+
+/* warstwa strony głównej, notes - logo, środek treści, stopka i 2 kartki */
+
+#notes{
+position: relative;
+width: 950px;
+min-height: 1036px;
+height:auto !important; height: 1036px;
+left: 160px;
+top: 100px;
+margin-bottom: 275px;
+z-index: 1;
+}
+
+#notes_logo{
+position: relative;
+width: 950px;
+height: 182px;
+background: url(./zasoby/grafika/img/notes_logo.jpeg) no-repeat;
+}
+
+#notes_srodek{
+position: relative;
+width: 950px;
+min-height: 787px;
+height:auto !important; height: 787px;
+left: 4px;
+background: url(./zasoby/grafika/img/notes_srodek.png) repeat-y;
+}
+
+#notes_stopka{
+position: relative;
+width: 950px;
+height: 67px;
+bottom: 0px;
+left: 4px;
+background: url(./zasoby/grafika/img/notes_stopka.png) no-repeat;
+text-align: right;
+color: #4c4c4c;
+font: 11px verdana, trebuchet;
+}
+
+#notes_tekst{
+position: relative;
+width: 660px;
+padding-left: 70px;
+min-height: 667px;
+height:auto !important; height: 667px;
+color: #191919;
+font: 13px verdana, trebuchet;
+text-align: justify;
+line-height: 18px;
+}
+
+#notes_kartka_logowanie{
+position: absolute;
+width: 228px;
+height: 285px;
+top: 5px;
+left: 737px;
+color: #191919;
+font: 14px verdana, trebuchet;
+z-index: 2;
+background: url(./zasoby/grafika/img/kartka_logowanie.jpeg) no-repeat;
+}
+
+#notes_kartka_top10{
+position: absolute;
+width: 229px;
+height: 347px;
+top: 305px;
+left: 739px;
+color: #191919;
+font: 14px verdana, trebuchet;
+z-index: 2;
+background: url(./zasoby/grafika/img/kartka_top10.jpeg) no-repeat;
+}
+
+.logi{
+border: solid 1px #5c5b4c;
+background: #e3dec5;
+display: block;
+width: 120px;
+font: 12px  verdana, trebuchet;
+margin-left: 2px;
+}.logi:focus{ border-color: #b1b097; }
+
+.formy{
+border: solid 1px #555555;
+background: white;
+font: 12px  verdana, trebuchet;
+margin: 3px;
+}.formy:focus{ border-color: #a4a4a4; }
+
+/* preloader i linki */
+
+#preloader{
+position: fixed; 
+width: 100%;  
+height: 100%;
+z-index: 4; 
+background: black;
+}
+#preloader_napis{
+position: absolute;
+bottom: 35px;
+right: 180px;
+}
+#preloader_animacja{
+position: absolute;
+bottom: 25px;
+right: 60px;
+}
+
+.banner{
+position: relative;
+width: 755px;
+height: 210px;
+text-align: center;
+left: 80px;
+bottom: 0px;
+border: 4px double #4c4c4c;
+}
+.banner small{
+color: #8e8887; font-size: 12px;
+}
+
+.reklama_tekst{
+position: absolute;
+z-index: 3;
+top: 0px;
+left: 745px;
+text-align: center;
+width: 120px;
+}
+
+/* tabelka */
+
+.table_style { border-collapse: collapse; border-spacing: 0px; width: 100%; text-align: center; }
+.td_lg {background: url("./zasoby/grafika/tabela/l_g.png") no-repeat; width: 12px; height: 12px;}
+.td_ld {background: url("./zasoby/grafika/tabela/l_d.png") no-repeat; width: 12px; height: 12px;}
+.td_pg {background: url("./zasoby/grafika/tabela/p_g.png") no-repeat; width: 12px; height: 12px;}
+.td_pd {background: url("./zasoby/grafika/tabela/p_d.png") no-repeat; width: 12px; height: 12px;}
+.td_pd {background: url("./zasoby/grafika/tabela/p_d.png") no-repeat; width: 12px; height: 12px;}
+.td_bok {background: url("./zasoby/grafika/tabela/bok.png") repeat-y; width: 12px;}
+.td_bok2 {background: url("./zasoby/grafika/tabela/bok.png") repeat-y; width: 12px; background-position: right;}
+.td_bok_p {background: url("./zasoby/grafika/tabela/bok_p.png") repeat-y; width: 12px;}
+.td_bok_p_fabryki {background: url("./zasoby/grafika/tabela/bok_p_fabryki.png") repeat-y; width: 12px;}
+.td_kreska_gorna {border: double #4c4c4c; border-width: 4px 0px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo.gif") repeat-x top;}
+.td_kreska_gorna2 {border: double #4c4c4c; border-width: 4px 0px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo2.gif") repeat-x top;}
+.td_kreska_dolna {border: double #4c4c4c; border-width: 0px 0px 4px 0px;}
+.td_kreska_boczna {border: double #4c4c4c; border-width: 0px 3px 0px 0px;}
+.naglowek {border: double #4c4c4c; border-width: 0px 3px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo.gif") repeat-x;}
+.naglowek2 {padding: 0px 4px 0px 4px; border: double #4c4c4c; border-width: 0px 3px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo2.gif") repeat-x;}
+
+/* tabelka jednostek */
+
+.tab_jednostki td{height: 18px; background: url("mapy/tab_wiersze.jpg") repeat-x; border: 1px solid black; border-width: 0 1px 1px 0px;}
+.tdr_jednostki td{height: 23px; background: url("mapy/tab_nagl.jpg") repeat-x; color: #ffffff;}
+.tab2_jednostki{text-align: left; background: url("mapy/tab_nagl.jpg") repeat-x; color: #ffffff; background-position: center;}
+.tab3_jednostki{text-align: center; background: url("mapy/tab_wiersze.jpg") repeat-x; border: 1px solid black; border-width: 0 1px 1px 1px; background-position: top;}
+
+
+/* tabelka */
+
+.table_style1 { border-collapse: collapse; border-spacing: 0px; width: 70%; text-align: center; }
+.td_lg {background: url("./zasoby/grafika/tabela/l_g.png") no-repeat; width: 12px; height: 12px;}
+.td_ld {background: url("./zasoby/grafika/tabela/l_d.png") no-repeat; width: 12px; height: 12px;}
+.td_pg {background: url("./zasoby/grafika/tabela/p_g.png") no-repeat; width: 12px; height: 12px;}
+.td_pd {background: url("./zasoby/grafika/tabela/p_d.png") no-repeat; width: 12px; height: 12px;}
+.td_pd {background: url("./zasoby/grafika/tabela/p_d.png") no-repeat; width: 12px; height: 12px;}
+.td_bok {background: url("./zasoby/grafika/tabela/bok.png") repeat-y; width: 12px;}
+.td_bok2 {background: url("./zasoby/grafika/tabela/bok.png") repeat-y; width: 12px; background-position: right;}
+.td_bok_p {background: url("./zasoby/grafika/tabela/bok_p.png") repeat-y; width: 12px;}
+.td_bok_p_fabryki {background: url("./zasoby/grafika/tabela/bok_p_fabryki.png") repeat-y; width: 12px;}
+.td_kreska_gorna {border: double #4c4c4c; border-width: 4px 0px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo.gif") repeat-x top;}
+.td_kreska_gorna2 {border: double #4c4c4c; border-width: 4px 0px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo2.gif") repeat-x top;}
+.td_kreska_dolna {border: double #4c4c4c; border-width: 0px 0px 4px 0px;}
+.td_kreska_boczna {border: double #4c4c4c; border-width: 0px 3px 0px 0px;}
+.naglowek {border: double #4c4c4c; border-width: 0px 3px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo.gif") repeat-x; background-position: left bottom;}
+.naglowek2 {padding: 0px 4px 0px 4px; border: double #4c4c4c; border-width: 0px 3px 0px 0px; background: url("./zasoby/grafika/tabela/tabelka_tlo2.gif") repeat-x; background-position: left bottom;}
+/* reszta */
+
+ul li a {text-decoration: none; }
+ul li a:hover {text-decoration: underline; color: #95917e; }
+a:link {color: #191919;}
+a:visited {color: #191919;}
+a:hover {text-decoration: none;}
+p {text-indent: 30px;}
+h2 {font-family: monospace, verdana; font-size: 21px; font-weight: bold; color: #252525;}
+h3 {font-family: verdana, trebuchet; font-size: 14px; font-weight: bold; color: #252525;}
+.styl_tr { background-image: url("./zasoby/grafika/tabelka_tlo.jpg"); }
+small{ color: #8e8887; font-size: 10px;}
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+
+a {
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	outline: none;
+}
+#popup {
+	position: absolute;
+	top: 10%;
+	left: 40%;
+	padding-top: 20px;
+	height: 600px;
+	width: 700px;
+	margin-top: -50px;
+	margin-left: -275px;
+	border: 3px solid #c00;
+	text-align: center;
+	background-color: #fff;
+}
+#menu td { border-bottom:1px solid black; }
+#menu .p { font-size:0px; width:6px; }
+#menu .m { border:1px solid gray; padding: 7px 4px 5px 4px; background:#e0d9c0; }
+#menu a  { text-decoration:none;  }
+
+img{ border: 0px;}
+
+.okno_ordery {
+display:none;
+position:absolute;
+z-index:10 !important ;
+top:15px;
+left:105px;
+height:515px;
+width:260px;
+padding: 10px 10px 10px 10px;
+background: url(./zasoby/grafika/profil/tlo_ordery.jpg) no-repeat;
+color: black;									
+font-style: normal;
+font-size: 11px;
+line-height: 14px;
+text-decoration: none;
+}
